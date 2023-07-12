@@ -1,5 +1,5 @@
 function alertMsg() {
-    document.getElementById("id1").innerHTML = "загрузите проект из github и выполните первое задание. Задание №1 ";
+    document.getElementById("id1").innerHTML = "загрузите проект из github и выполните первое задание. Задание №1  https://github.com/agentpavel/JS_TASK.git";
     //document.body.appendChild(document.createTextNode(produceMessage()));
 };
 
