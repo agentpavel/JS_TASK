@@ -12,9 +12,12 @@ function addMsg() {
     var v_day = current_datetime.getDate(); // 11
     var t_hours = current_datetime.getHours(); // 10
     var t_minutes = current_datetime.getMinutes(); // 0
+    let a=10;
+    let b=20;
+    let c=a+b;
   
     var current_datetime_txt = v_year+'.'+v_month+"."+v_day+"   " +t_hours+":"+t_minutes;
-    const newContent = document.createTextNode(current_datetime_txt+") Здесь должно быть значение a + b");
+    const newContent = document.createTextNode(current_datetime_txt + " " + "Cумма чисел 10 и 20 =" + " " + c);
     newDiv.appendChild(newContent);
     const currentDiv = document.getElementById("div1");
     document.body.insertBefore(newDiv,currentDiv);
