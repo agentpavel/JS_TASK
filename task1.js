@@ -23,3 +23,47 @@ function addMsg() {
     document.body.insertBefore(newDiv,currentDiv);
 
 }
+
+function showArray() {
+    
+    let bookIdiot = {     // объект
+        name: "Idiot",  // под ключом "name" хранится значение "John"
+        author: "Dostoevskii Fedor",        // под ключом "age" хранится значение 30
+        year: 1920
+      };
+      let bookWarAndPeace = {     // объект
+        name: "War and Peace ",  // под ключом "name" хранится значение "John"
+        author: "Tolstoi Lion",        // под ключом "age" хранится значение 30
+        year: 1945
+      };
+      let arrayBooks=[bookIdiot, bookWarAndPeace, "Отцы и дети", "Гранатовый браслет", "Горе от ума", "Тарас Бульба", "Анна Каренина", "Гордость и предубеждение", "Преступление и наказание", "Герой нашего времени"]
+    for (let i = 0; i < arrayBooks.length; i++) {
+        const newDiv = document.createElement("div");
+        if (i<2) {
+            const newContent = document.createTextNode(i+1+") Массив книг "+ arrayBooks[i].author+ "-" +arrayBooks[i].name);
+            newDiv.appendChild(newContent);
+            const currentDiv = document.getElementById("div1");
+            document.body.insertBefore(newDiv,currentDiv);
+        } 
+        else {
+            const newContent = document.createTextNode(i+1+") Массив книг "+ arrayBooks[i]);
+            newDiv.appendChild(newContent);
+            const currentDiv = document.getElementById("div1");
+            document.body.insertBefore(newDiv,currentDiv);
+        }
+        
+
+        
+    }
+}
+
+function showTenTimes() {
+    document.getElementById("buttonLi").innerHTML = "Бла-бла";
+    // for (let i = 0; i < 10; i++) {
+    //     showArray();    
+    // }
+    
+    
+}
+
+
